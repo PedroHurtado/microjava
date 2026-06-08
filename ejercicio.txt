@@ -1,0 +1,30 @@
+pizza->{
+   id,
+   name,
+   description,
+   url,
+   price=>coste ingredientes + 20 % beneficios(desnormalizado)
+   ingredientes:[{id,name,cost}]
+}
+
+ingrediente->{
+   id,
+   name,
+   cost 
+}
+
+Agregados->BoundedContext->Entidades->id debe de ser unico y representar
+la igualdad de una clase con otra
+   class.id == class1.id
+
+1. Core->equals+Gethascode+opertor == !=
+2. List<DomainEvents>
+   add(evento)
+   clear()
+   remove(evento)
+   Events->get->ReadOnly->referencia->copia
+3. Deberia de tenere atributos y constructor protected
+4. Deberia de crearse con un metodo static de clase->Factory method
+5. No debemos de tener ni un set
+6. Modificaciones por Comandos-> void(parametro o n parametros)->record java  
+7. 1:N List->Set->Modificable->inmatable java 
